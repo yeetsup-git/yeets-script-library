@@ -37,5 +37,5 @@ echo "type another number"
 read num2
 botnum=num2
 echo "calculating.."
-sum=(($topnum $mads $num2))
+sum=(($topnum $mads $botnum))
 echo $sum
