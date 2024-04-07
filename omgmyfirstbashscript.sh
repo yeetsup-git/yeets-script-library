@@ -14,28 +14,28 @@
 #================
 echo "Type a number:"
 read num1
-topnum=($num1)
+topnum=$num1
 echo "would you like to divide, subtract, multiply, or add?"
 read symb
-if [ ($symb)="divide" ]
+if [ symb="divide" ]
 then
     mads="/"
 fi
-if [ ($symb)="subtract" ]
+if [ symb="subtract" ]
 then
     mads="-"
 fi
-if [ ($symb)="multiply" ]
+if [ symb="multiply" ]
 then
     mads="*"
 fi
-if [ ($symb)="add" ]
+if [ symb="add" ]
 then
     mads="+"
 fi
 echo "type another number"
 read num2
-botnum=($num2)
+botnum=num2
 echo "calculating.."
 sum=(($topnum $mads $num2))
 echo $sum
